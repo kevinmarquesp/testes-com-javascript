@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <style>
+            
+            * { margin: 0; padding: 0; list-style: none; font-family: Arial; }
+            body { display: flex; justify-content: center; background-color: black; }
+            div.main {
+                box-shadow: #00000060 2px 2px 5px;
+                background-image: linear-gradient(to right, #7a13aa, #00ccff);
+                margin-top: 50px;
+                width: 400px;
+                padding: 20px;
+                border-radius: 15px;
+                text-align: center;
+            }
+            div.main input, div.main button {
+                background-color: transparent;
+                border-style: solid;
+                border-color: white;
+                border-width: 1px;
+                border-radius: 100px;
+                color: white;
+                transition: 500ms;
+            }
+            div.main input {
+                height: 30px; width: 100px;
+                padding: 0 15px;
+            }
+            div.main button {
+                height: 32px; width: 190px;
+                padding: 0 15px;
+            } div.main button:hover {
+                color: #319fe9;
+                background-color: white;
+            }
+            div#res {
+                background-image: linear-gradient(to right, #ffffffbd, #ffffff6c);
+                margin-top: 20px;
+                border-radius: 20px;
+                padding: 10px 0;
+            }
+            div#res p {
+                text-align: right;
+                padding: 0 20px;
+            }
+            span.list { color: #7a13aa; font-family: monospace; }
+            div#res ul {
+                text-align: left;
+                padding: 0 20px;
+            }
+
+        </style>
+        <title>Testes com JavaScript</title>
+    </head>
+    <body>
+
+
+        <div class="main">
+            <input type="number" id="txtnum">
+            <button id="btn"> Adicionar e Atualizar </button>
+            <div id="res"> </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
